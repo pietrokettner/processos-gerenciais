@@ -1,0 +1,363 @@
+:focus {
+    outline: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    background: #261555;
+    color: #FFF6EB; 
+}
+
+.gota {
+    width: 29rem;
+    height: 25rem;
+    background: url(/img/waterdrop-sharp-glimpse-up-illustration-f8eaba.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transform: rotate(45deg);
+    transition: transform 0.3s;
+    position: absolute;
+    top: 47%;
+    left: 30%;
+    z-index: -1;
+}
+
+.gota:hover {
+    transform: rotate(90deg); 
+}
+
+.splash {
+    height: 25rem;
+    background: url(/img/311296.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(90deg);
+    transition: transform 0.3s;
+    position: absolute;
+    top: 83%;
+    left: -42%;
+    z-index: -1;
+    background-size: cover;
+    width: 100%;
+}
+
+.sideColor {
+    height: 25rem;
+    background: purple;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(90deg);
+    transition: transform 0.3s;
+    position: absolute;
+    top: 83%;
+    left: 39.5%;
+    z-index: -1;
+    background-size: cover;
+    width: 100%;
+}
+
+.splash2 {
+    height: 100%;
+    background: url(/img/311140.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(90deg);
+    transition: transform 0.3s;
+    position: absolute;
+    top: -5%;
+    left: 42.2%;
+    z-index: -1;
+    background-size: cover;
+    width: 50%;
+}
+
+.subTitulo {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.titulo {
+    font-size: 4.5rem;
+    font-weight: 800;
+    letter-spacing: 15px;
+    line-height: 80px;
+    margin-bottom: 1rem;
+}
+
+.divPreco {
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+
+.divPreco p {
+    font-weight: 800;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.divPreco span {
+    padding-left: 0.8rem;
+    background: #6A6677;
+    border-radius: 1000px;
+    font-size: 1rem;
+    padding-right: 0.8rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.3rem;
+    cursor: pointer;
+    position: relative; 
+}
+
+.divPreco span .tooltiptext {
+    visibility: hidden;
+    width: 20rem;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -150px;
+    opacity: 0;
+    transition: auto;
+}
+
+.divPreco span:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.divPreco h2 {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-size: 3.5rem;
+    color: #CDF257;
+}
+
+.containerInfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+.divInfo {
+    width: 48%; 
+    margin-bottom: 20px; 
+}
+
+.divInfo h3 {
+    font-weight: 700;
+}
+
+.containerForm {
+    margin-top: 4rem;
+    padding: 2rem;
+    background: #FEEFE5;
+    color: #212121;
+    border-radius: 10px;
+    width: 75%;
+    height: 37.5rem;
+    margin-left: 5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6), 
+                0 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+.containerForm h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.containerForm span {
+    font-weight: 700;
+}
+
+.divDesconto {
+    padding: 0.3rem;
+    border-radius: 100px;
+    background: #E4B6FF;
+    position: absolute;
+    left: 69.5%;
+    top: 7%;
+    text-align: center;
+    width: 8%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 
+                0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.divDesconto h3 {
+    font-size: 2.5rem;
+    margin-bottom: 0rem;
+    margin-top: 0.8rem;
+}
+
+.divDesconto p {
+    font-size: 1.4rem;
+    margin-top: -0.2rem;
+}
+
+.divForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.divForm input {
+    border-radius: 10px;
+    margin: 0.5rem 0;
+    border: none;
+    height: 3.5rem;
+    padding: 1rem;
+    border: 0.1px solid grey;
+}
+
+.divCheckbox {
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.5);
+    margin-left: 0.3rem;
+    cursor: pointer;
+}
+
+.divCheckbox p {
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.buttonInscrevase {
+    margin-top: 1rem;
+    background: #BC66EE;
+    border-radius: 50px;
+    text-align: center;
+    border: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    padding-bottom: 0.6rem;
+    transition: 0.3s ease-in-out;
+}
+
+.buttonInscrevase:hover {
+    background: #261555;
+    color: #CDF257;
+}
+
+.background1 {
+    background: #FEEFE5;
+}
+
+.containerSection2, .img1 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    color: #212121;
+}
+
+.containerSection2 h3 {
+    font-size: 3.3rem;
+    font-weight: 700;
+}
+
+.containerSection2 p {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+}
+
+.divUL {
+    margin-top: 2rem;
+}
+
+.divUL ul {
+    list-style: none; 
+    padding-left: 20px; 
+}
+
+.divUL li {
+    position: relative;
+    margin-bottom: 1rem; 
+    padding-left: 2rem; 
+}
+
+.divUL li::before {
+    content: "•";
+    font-size: 3rem;
+    color: #BC66EE; 
+    position: absolute;
+    left: 0;
+    top: 0;
+    line-height: 1;
+}
+
+ul li {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.pLI {
+    font-weight: 400;
+    margin-top: 0rem !important;
+}
+
+.tituloSal {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #261555;
+    margin-top: 3rem;
+}
+
+.containerSal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+    gap: 3rem;
+    margin-top: -2rem;
+}
+
+.sal1, .sal2, .sal3 {
+    color: #212121;
+    margin-top: 12rem;
+    border-bottom: 2px solid #BC66EE;
+    width: 30%;
+}
+
+.sal2 {
+    margin-top: 5rem;
+}
+
+.sal3 {
+    margin-top: -2rem;
+}
+
+.valorSalario {
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+.valorSalario span {
+    color: #8E8D90;
+}
+
+.descricao {
+    font-weight: 600;
+}
