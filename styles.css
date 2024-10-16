@@ -361,3 +361,78 @@ ul li {
 .descricao {
     font-weight: 600;
 }
+
+.background2 {
+    background: whitesmoke;
+    color: #212121;
+}
+
+.tituloIndicado {
+    margin-top: 3rem;
+    color: #261555;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.containerPQ {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.imgIndica {
+    width: 360px;
+    height: 260px;
+    margin-bottom: 2rem;
+}
+
+.divPQ h3 {
+    color: #261555;
+    font-weight: 700;
+}
+
+.divPQ p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.tituloPrograma, .paragrafoPrograma {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.tituloPrograma {
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: #CDF257;
+}
+
+.paragrafoPrograma {
+    margin-top: 0rem;
+    margin-bottom: 5rem;
+    font-size: 1.2rem;
+}
+
+.containerMaterias {
+    margin-bottom: 5rem;
+}
+
+.divCursos h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #CDF257;
+}
+
+.subtituloCurso {
+    color: #FEEFE5 !important;
+}
+
+.divMateria h4 {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #CDF257;
+    border-top: 1px solid #BC66EE;
+}
