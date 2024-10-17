@@ -435,6 +435,8 @@ button {
     padding: 0rem;
     border-radius: 100px;
     transition: 0.3s ease-in-out;
+    margin-bottom: 0.5rem;
+
 }
 
 .imgPlus:hover {
@@ -459,4 +461,13 @@ button {
     margin-bottom: 1rem;
     border-bottom: 1px solid #CDF257;
     border-top: 1px solid #BC66EE;
+}
+
+.containerBonus {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 20px;
+    background: #FEEFE5;
 }
