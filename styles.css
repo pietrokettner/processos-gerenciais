@@ -248,7 +248,7 @@ input[type="checkbox"] {
     margin-top: 1rem;
     background: #BC66EE;
     border-radius: 50px;
-    text-align: center;
+    justify-content: center;
     border: none;
     font-weight: 700;
     font-size: 1.2rem;
@@ -465,9 +465,116 @@ button {
 
 .containerBonus {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
-    padding: 1rem;
+    padding: 4rem;
+    margin-bottom: 3rem;
     border-radius: 20px;
     background: #FEEFE5;
+    height: 260px;
+    width: 1160px;
+    margin-left: 8.5rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
 }
+
+.divBonus {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 1rem;
+}
+
+.img2 {
+    background: #212121;
+    border-radius: 20px;
+    margin-top: -1.5rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+.divTextos {
+    color: #212121;
+    display: flex;
+    flex-direction: column;
+}
+
+.divTextos h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #22053D;
+}
+
+.divTextos p {
+    font-size: 1.4rem;
+}
+
+.img3 {
+    position: absolute;
+    top: 636.1%;
+    left: 65.2%;
+    border-bottom-right-radius: 20px;
+    height: 260px;
+    border-top-right-radius: 20px;
+}
+
+.anotherBackground {
+    background: #FEEFE5;
+    height: 100vh; /* Altura para cobrir a página */
+    position: relative; /* Posição relativa para manter a estrutura */
+    z-index: 1; /* A camada de fundo ficará atrás */
+}
+
+.background3 {
+    background: linear-gradient(to right, #5C3E7F, #6B5192, #7B65A6, #8976B7, #9586C6);
+    height: 270px;
+    position: absolute; /* Posição absoluta para sobrepor */
+    top: 5%;
+    width: 100%; /* Ocupa a largura total */
+    z-index: 2; /* Garantir que fique acima do anotherBackground */
+}
+
+.divTitulo {
+    display: flex;
+    align-items: center;
+    margin-top: 4rem;
+    margin-left: 9rem;
+}
+
+.divTitulo h3 {
+    font-size: 3.3rem;
+}
+
+.containerCurriculo {
+    padding: 4rem;
+    border-radius: 20px;
+    background: whitesmoke;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    margin-top: 4rem;
+}
+
+.divCurriculo {
+    color: #22053D;
+}
+
+.divCurriculo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.divFotoNome {
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+    margin-top: -2rem;
+}
+
+.img4 {
+    border-radius: 100px;
+}
+
+.divSalario {
+    margin-top: -2rem;
+}
+
+
+
