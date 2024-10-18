@@ -518,18 +518,18 @@ button {
 
 .anotherBackground {
     background: #FEEFE5;
-    height: 100vh; /* Altura para cobrir a página */
-    position: relative; /* Posição relativa para manter a estrutura */
-    z-index: 1; /* A camada de fundo ficará atrás */
+    height: 100vh;
+    position: relative;
+    z-index: 1; 
 }
 
 .background3 {
     background: linear-gradient(to right, #5C3E7F, #6B5192, #7B65A6, #8976B7, #9586C6);
     height: 270px;
-    position: absolute; /* Posição absoluta para sobrepor */
+    position: absolute;
     top: 5%;
-    width: 100%; /* Ocupa a largura total */
-    z-index: 2; /* Garantir que fique acima do anotherBackground */
+    width: 100%;
+    z-index: 2;
 }
 
 .divTitulo {
@@ -601,20 +601,20 @@ ul li {
     margin-top: 3rem;
     font-weight: 300;
     position: relative;
-    padding-left: 30px; /* Espaço para o marcador personalizado */
+    padding-left: 30px; 
     margin-bottom: 10px;
 }
 
 ul li::before {
-    content: ''; /* Cria o marcador personalizado */
+    content: ''; 
     position: absolute;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 15px; /* Tamanho da bolinha */
+    width: 15px; 
     height: 15px;
-    background-color: #5C3E7F; /* Cor de fundo roxa */
-    border-radius: 50%; /* Formato circular */
+    background-color: #5C3E7F; 
+    border-radius: 50%;
 }
 
 .divCertificado {
