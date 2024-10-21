@@ -509,7 +509,7 @@ button {
 
 .img3 {
     position: absolute;
-    top: 640.9%;
+    top: 636.1%;
     left: 65.2%;
     border-bottom-right-radius: 20px;
     height: 260px;
@@ -588,13 +588,13 @@ button {
     text-align: end;
 }
 
-ul {
+.ulCurriculo {
     list-style-type: none; 
     padding-left: 0; 
     margin-left: 1rem;
 }
 
-ul li {
+.ulCurriculo li {
     color: #212121;
     font-size: 1.5rem;
     margin-bottom: 3rem;
@@ -605,7 +605,7 @@ ul li {
     margin-bottom: 10px;
 }
 
-ul li::before {
+.ulCurriculo li::before {
     content: ''; 
     position: absolute;
     left: 0;
@@ -613,7 +613,7 @@ ul li::before {
     transform: translateY(-50%);
     width: 15px; 
     height: 15px;
-    background-color: #5C3E7F; 
+    background-color: #BC66EE; 
     border-radius: 50%;
 }
 
@@ -635,4 +635,52 @@ ul li::before {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
 }
 
+.background4 {
+    background: url(/img/tild3539-3265-4431-b163-303366353534__banner.png);
+    background-repeat: no-repeat;
+    margin-top: 6rem;
+    margin-left: 27.5rem;
+    width: 1160px;
+    height: 650px;
+    padding: 3rem;
+}
+
+.divGratis {
+    background: #CDF257;
+    color: #22053D;
+    border-radius: 50px;
+    text-align: center;
+    width: 8.125rem;
+    height: 3.125rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    padding-top: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    letter-spacing: 5px;
+}
+
+.tituloGratis {
+    color: #22053D;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 4.5rem;
+}
+
+.divTextosIngles {
+    margin-left: 7rem;
+}
+
+.divTextosIngles h3 {
+    color: #22053D;
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+
+.divTextosIngles p {
+    color: #22053D;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
 
