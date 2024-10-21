@@ -684,3 +684,57 @@ button {
     margin-top: 2rem;
 }
 
+.background5 {
+    background: #FEEFE5;
+}
+
+.divTituloPlano {
+    color: #22053D;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.divTituloPlano h3 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.divTituloPlano p {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.containerPlanos {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    justify-content: center;
+}
+
+.divPlano {
+    padding: 2rem;
+    background: whitesmoke;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 260px;
+    height: 210px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+.imgPlano {
+    background: #261555;
+    padding: 1rem;
+    border-radius: 20px;
+    width: 30%;
+}
+
+.divPlano p {
+    color: #212121;
+    margin-top: 2rem;
+}
+
