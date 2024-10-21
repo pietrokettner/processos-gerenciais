@@ -710,7 +710,7 @@ button {
     align-items: center;
     gap: 3rem;
     margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     justify-content: center;
 }
 
@@ -738,3 +738,93 @@ button {
     margin-top: 2rem;
 }
 
+.background6 {
+    background: linear-gradient(to right, #261555, #212121, #22053D, #261555);
+}
+
+.divLogo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.imgLogo {
+    border-radius: 20px;
+}
+
+.divLogo h3, .divAreas h4 {
+    font-size: 1.2rem;
+    color: whitesmoke;
+    font-weight: 700;
+}
+
+.divAreas h4 {
+    margin-bottom: 2rem;
+}
+
+.divLogo2 {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.divAreas {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2rem;
+    margin-left: 5.5rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+nav a {
+    text-decoration: none;
+    color: #C7C0CE;
+    margin-bottom: 0.5rem; 
+    font-size: 1.1rem;
+}
+
+.topLine {
+    border-top: 1px solid #9486A1;
+    margin-top: 2rem;
+}
+
+.containerContato {
+    margin-top: 2rem;
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 1rem;
+}
+
+.divContato {
+    line-height: 1rem;
+}
+
+.divContato p {
+    color: #9486A1;
+    font-size: 1.2rem;
+}
+
+.divContato h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.divInfo2 {
+    color: #9486A1;
+    line-height: 0.5rem;
+}
+
+.divSocialMedia {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
