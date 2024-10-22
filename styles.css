@@ -427,6 +427,13 @@ button {
     align-items: end;
     justify-content: space-between;
     width: 100%;
+    border-bottom: 1px solid;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover, .subtituloCurso:hover {
+    color: #CDF257 !important;
+
 }
 
 .imgPlus {
@@ -453,6 +460,11 @@ button {
 
 .subtituloCurso {
     color: #FEEFE5 !important;
+    transition: 0.3s ease-in-out;
+}
+
+.divMaterias {
+    display: none;
 }
 
 .divMateria h4 {
@@ -461,6 +473,8 @@ button {
     margin-bottom: 1rem;
     border-bottom: 1px solid #CDF257;
     border-top: 1px solid #BC66EE;
+    display: flex;
+    justify-content: space-between;
 }
 
 .containerBonus {
@@ -468,7 +482,7 @@ button {
     justify-content: flex-start;
     align-items: center;
     padding: 4rem;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     border-radius: 20px;
     background: #FEEFE5;
     height: 260px;
@@ -508,9 +522,9 @@ button {
 }
 
 .img3 {
-    position: absolute;
-    top: 636.1%;
-    left: 65.2%;
+    position: relative;
+    top: 414.6%;
+    left: 18.2%;
     border-bottom-right-radius: 20px;
     height: 260px;
     border-top-right-radius: 20px;
