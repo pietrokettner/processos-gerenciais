@@ -723,7 +723,7 @@ button:hover, .subtituloCurso:hover {
     display: flex;
     align-items: center;
     gap: 3rem;
-    margin-top: 3rem;
+    margin-top: 40rem;
     margin-bottom: 4rem;
     justify-content: center;
 }
@@ -792,17 +792,24 @@ button:hover, .subtituloCurso:hover {
     margin-left: 5.5rem;
 }
 
-nav {
+.divNav {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-nav a {
+.divNav a {
     text-decoration: none;
     color: #C7C0CE;
     margin-bottom: 0.5rem; 
     font-size: 1.1rem;
+    transition: 0.3s ease-in-out;
+}
+
+.divNav a:hover {
+    color: #555;
+    text-decoration: underline;
+    font-size: 1.2rem;
 }
 
 .topLine {
@@ -841,4 +848,247 @@ nav a {
     justify-content: center;
     gap: 2rem;
     margin-top: 3rem;
+}
+
+.ancoraSocial img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.ancoraSocial:hover img {
+    transform: scale(1.5); 
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 2.5rem;
+    }
+
+    .gota {
+        width: 10rem;
+        height: 20rem;
+        top: 50%;
+        left: 30%;
+    }
+
+    .divDesconto {
+        left: 54.5%;
+        top: 7%;
+        width: 40%;
+    }
+
+    .splash {
+        height: 26rem;
+        top: 12%;
+        left: -30%;
+    }
+
+    .splash2 {
+        height: 100%;
+        top: -5%;
+        left: 25.2%;
+        width: 15%;
+    }
+    
+    .sideColor {
+        height: 106%;
+        top: 54%;
+        left: 0%;
+        width: 100%;
+        transform: rotate(0deg);
+    }
+
+    .containerForm {
+        margin-top: auto;
+        margin-bottom: 3rem;
+        width: auto;
+        height: auto;
+        margin-left: auto;
+    }
+
+    .tituloSal {
+        font-size: 2.5rem;
+    }
+
+    .containerSal {
+        display: flex;
+        flex-direction: column;
+        margin-top: auto;
+    }
+
+    .sal1, .sal2, .sal3 {
+        margin-top: 2rem;
+        width: auto;
+    }
+
+    .tituloIndicado {
+        font-size: 2.5rem;
+    }
+
+    .containerPQ {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tituloPrograma {
+        font-size: 3rem;
+    }
+
+    .divCursos h3 {
+        font-size: 1.5rem;
+    }
+
+    .subtituloCurso {
+        font-size: 1rem;
+    }
+
+    .imgPlus {
+        width: 10%;
+    }
+
+    .divMateria h4 {
+        font-size: 0.9rem;
+        gap: 1rem;
+    }
+
+    .containerBonus {
+        height: auto;
+        flex-direction: column;
+        width: auto;
+        margin-left: auto;
+    }
+
+    .divBonus {
+        gap: 2rem;
+        margin-top: auto;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    .divTextos h3 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .divTextos p {
+        font-size: 1rem;
+    }
+
+    .img3 {
+        top: auto;
+        left: auto;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .divTitulo {
+        margin-left: auto;
+    }
+
+    .divTitulo h3 {
+        font-size: 2.4rem;
+    }
+
+    .containerCurriculo {
+        margin-top: auto;
+    }
+
+    .divCurriculo, .divHabilidades {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+    
+    .divHabilidades {
+        gap: 0rem;
+    }
+
+    .divFotoNome {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .divSalario {
+        margin-top: -2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .divSalario p {
+        font-size: 1.1rem;
+    }
+
+    .divSalario h3 {
+        font-size: 2rem;
+    }
+
+    .divNome h3 {
+        font-size: 2.5rem;
+    }
+
+    .divNome p {
+        font-size: 1.1rem;
+    }
+
+    .divCertificado {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ulCurriculo {
+        padding-left: 0;
+        text-align: left;
+        margin-left: -2rem;
+    }
+
+    .tituloCertificado h3 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .containerPlanos {
+        flex-direction: column;
+    }
+
+    .divLogo2 {
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .imgLogo {
+        width: 100px;
+        height: auto;
+    }
+
+    .divAreas {
+        margin-left: auto;
+    }
+
+    .divAreas h4 {
+        font-size: 2rem;
+    }
+
+    .divNav a {
+        font-size: 1.5rem;
+    }
+
+    .containerContato {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .divInfo2 {
+        line-height: 1.3;
+    }
+
+    .divSocialMedia {
+        margin-top: auto;
+        margin-bottom: 1rem;
+    }
+
+    .background4 {
+        display: none;
+    }
 }
