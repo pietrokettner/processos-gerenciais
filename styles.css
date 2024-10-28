@@ -1,1094 +1,1449 @@
 :focus {
-    outline: 0;
+  outline: 0;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Josefin Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    -webkit-font-smoothing: antialiased;
-    background: #261555;
-    color: #FFF6EB; 
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  background: #261555;
+  color: #fff6eb;
 }
 
 .gota {
-    width: 29rem;
-    height: 25rem;
-    background: url(/img/waterdrop-sharp-glimpse-up-illustration-f8eaba.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    transform: rotate(45deg);
-    transition: transform 0.3s;
-    position: absolute;
-    top: 47%;
-    left: 30%;
-    z-index: -1;
+  width: 29rem;
+  height: 25rem;
+  background: url(/img/waterdrop-sharp-glimpse-up-illustration-f8eaba.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transform: rotate(45deg);
+  transition: transform 0.3s;
+  position: absolute;
+  top: 47%;
+  left: 30%;
+  z-index: -1;
 }
 
 .gota:hover {
-    transform: rotate(90deg); 
+  transform: rotate(90deg);
 }
 
 .splash {
-    height: 25rem;
-    background: url(/img/311296.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    transform: rotate(90deg);
-    transition: transform 0.3s;
-    position: absolute;
-    top: 83%;
-    left: -42%;
-    z-index: -1;
-    background-size: cover;
-    width: 100%;
+  height: 25rem;
+  background: url(/img/311296.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(90deg);
+  transition: transform 0.3s;
+  position: absolute;
+  top: 83%;
+  left: -42%;
+  z-index: -1;
+  background-size: cover;
+  width: 100%;
 }
 
 .sideColor {
-    height: 25rem;
-    background: purple;
-    background-repeat: no-repeat;
-    background-position: center;
-    transform: rotate(90deg);
-    transition: transform 0.3s;
-    position: absolute;
-    top: 83%;
-    left: 39.5%;
-    z-index: -1;
-    background-size: cover;
-    width: 100%;
+  height: 25rem;
+  background: purple;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(90deg);
+  transition: transform 0.3s;
+  position: absolute;
+  top: 83%;
+  left: 39.5%;
+  z-index: -1;
+  background-size: cover;
+  width: 100%;
 }
 
 .splash2 {
-    height: 100%;
-    background: url(/img/311140.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    transform: rotate(90deg);
-    transition: transform 0.3s;
-    position: absolute;
-    top: -5%;
-    left: 42.2%;
-    z-index: -1;
-    background-size: cover;
-    width: 50%;
+  height: 100%;
+  background: url(/img/311140.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(90deg);
+  transition: transform 0.3s;
+  position: absolute;
+  top: -5%;
+  left: 42.2%;
+  z-index: -1;
+  background-size: cover;
+  width: 50%;
 }
 
 .subTitulo {
-    margin-top: 4rem;
-    margin-bottom: 2rem;
-    font-weight: 800;
-    font-size: 1.5rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font-weight: 800;
+  font-size: 1.5rem;
 }
 
 .titulo {
-    font-size: 4.5rem;
-    font-weight: 800;
-    letter-spacing: 15px;
-    line-height: 80px;
-    margin-bottom: 1rem;
+  font-size: 4.5rem;
+  font-weight: 800;
+  letter-spacing: 15px;
+  line-height: 80px;
+  margin-bottom: 1rem;
 }
 
 .divPreco {
-    margin-bottom: 3rem;
-    margin-top: 2rem;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
 }
 
 .divPreco p {
-    font-weight: 800;
-    font-size: 1.2rem;
-    margin-top: 1rem;
+  font-weight: 800;
+  font-size: 1.2rem;
+  margin-top: 1rem;
 }
 
 .divPreco span {
-    padding-left: 0.8rem;
-    background: #6A6677;
-    border-radius: 1000px;
-    font-size: 1rem;
-    padding-right: 0.8rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.3rem;
-    cursor: pointer;
-    position: relative; 
+  padding-left: 0.8rem;
+  background: #6a6677;
+  border-radius: 1000px;
+  font-size: 1rem;
+  padding-right: 0.8rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.3rem;
+  cursor: pointer;
+  position: relative;
 }
 
 .divPreco span .tooltiptext {
-    visibility: hidden;
-    width: 20rem;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -150px;
-    opacity: 0;
-    transition: auto;
+  visibility: hidden;
+  width: 20rem;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -150px;
+  opacity: 0;
+  transition: auto;
 }
 
 .divPreco span:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
 .divPreco h2 {
-    font-family: "Kanit", sans-serif;
-    font-weight: 300;
-    font-size: 3.5rem;
-    color: #CDF257;
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-size: 3.5rem;
+  color: #cdf257;
 }
 
 .containerInfo {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .divInfo {
-    width: 48%; 
-    margin-bottom: 20px; 
+  width: 48%;
+  margin-bottom: 20px;
 }
 
 .divInfo h3 {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .containerForm {
-    margin-top: 4rem;
-    padding: 2rem;
-    background: #FEEFE5;
-    color: #212121;
-    border-radius: 10px;
-    width: 75%;
-    height: 37.5rem;
-    margin-left: 5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6), 
-                0 6px 20px rgba(0, 0, 0, 0.6);
+  margin-top: 4rem;
+  padding: 2rem;
+  background: #feefe5;
+  color: #212121;
+  border-radius: 10px;
+  width: 75%;
+  height: 37.5rem;
+  margin-left: 5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6), 0 6px 20px rgba(0, 0, 0, 0.6);
 }
 
 .containerForm h3 {
-    font-size: 2.5rem;
-    font-weight: 700;
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 
 .containerForm span {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .divDesconto {
-    padding: 0.3rem;
-    border-radius: 100px;
-    background: #E4B6FF;
-    position: absolute;
-    left: 69.5%;
-    top: 7%;
-    text-align: center;
-    width: 8%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 
-                0 6px 20px rgba(0, 0, 0, 0.3);
+  padding: 0.3rem;
+  border-radius: 100px;
+  background: #e4b6ff;
+  position: absolute;
+  left: 69.5%;
+  top: 7%;
+  text-align: center;
+  width: 8%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 .divDesconto h3 {
-    font-size: 2.5rem;
-    margin-bottom: 0rem;
-    margin-top: 0.8rem;
+  font-size: 2.5rem;
+  margin-bottom: 0rem;
+  margin-top: 0.8rem;
 }
 
 .divDesconto p {
-    font-size: 1.4rem;
-    margin-top: -0.2rem;
+  font-size: 1.4rem;
+  margin-top: -0.2rem;
 }
 
 .divForm {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .divForm input {
-    border-radius: 10px;
-    margin: 0.5rem 0;
-    border: none;
-    height: 3.5rem;
-    padding: 1rem;
-    border: 0.1px solid grey;
+  border-radius: 10px;
+  margin: 0.5rem 0;
+  border: none;
+  height: 3.5rem;
+  padding: 1rem;
+  border: 0.1px solid grey;
 }
 
 .divCheckbox {
-    display: flex;
-    align-items: flex-end;
-    gap: 1rem;
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
 }
 
 input[type="checkbox"] {
-    transform: scale(1.5);
-    margin-left: 0.3rem;
-    cursor: pointer;
+  transform: scale(1.5);
+  margin-left: 0.3rem;
+  cursor: pointer;
 }
 
 .divCheckbox p {
-    font-size: 0.9rem;
-    font-style: italic;
+  font-size: 0.9rem;
+  font-style: italic;
 }
 
 .buttonInscrevase {
-    margin-top: 1rem;
-    background: #BC66EE;
-    border-radius: 50px;
-    justify-content: center;
-    border: none;
-    font-weight: 700;
-    font-size: 1.2rem;
-    padding-top: 1rem;
-    padding-bottom: 0.6rem;
-    transition: 0.3s ease-in-out;
+  margin-top: 1rem;
+  background: #bc66ee;
+  border-radius: 50px;
+  justify-content: center;
+  border: none;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding-top: 1rem;
+  padding-bottom: 0.6rem;
+  transition: 0.3s ease-in-out;
 }
 
 .buttonInscrevase:hover {
-    background: #261555;
-    color: #CDF257;
+  background: #261555;
+  color: #cdf257;
 }
 
 .background1 {
-    background: #FEEFE5;
+  background: #feefe5;
 }
 
-.containerSection2, .img1 {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    color: #212121;
+.containerSection2,
+.img1 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  color: #212121;
+}
+
+.img1 {
+  width: auto;
 }
 
 .containerSection2 h3 {
-    font-size: 3.3rem;
-    font-weight: 700;
+  font-size: 3.3rem;
+  font-weight: 700;
 }
 
 .containerSection2 p {
-    margin-top: 1rem;
-    font-size: 1.3rem;
+  margin-top: 1rem;
+  font-size: 1.3rem;
 }
 
 .divUL {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .divUL ul {
-    list-style: none; 
-    padding-left: 20px; 
+  list-style: none;
+  padding-left: 20px;
 }
 
 .divUL li {
-    position: relative;
-    margin-bottom: 1rem; 
-    padding-left: 2rem; 
+  position: relative;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
 }
 
 .divUL li::before {
-    content: "•";
-    font-size: 3rem;
-    color: #BC66EE; 
-    position: absolute;
-    left: 0;
-    top: 0;
-    line-height: 1;
+  content: "•";
+  font-size: 3rem;
+  color: #bc66ee;
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 1;
 }
 
 ul li {
-    font-size: 2rem;
-    font-weight: 700;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 .pLI {
-    font-weight: 400;
-    margin-top: 0rem !important;
+  font-weight: 400;
+  margin-top: 0rem !important;
 }
 
 .tituloSal {
-    text-align: center;
-    font-size: 3.5rem;
-    font-weight: 700;
-    color: #261555;
-    margin-top: 3rem;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #261555;
+  margin-top: 3rem;
 }
 
 .containerSal {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 3rem;
-    gap: 3rem;
-    margin-top: -2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  gap: 3rem;
+  margin-top: -2rem;
 }
 
-.sal1, .sal2, .sal3 {
-    color: #212121;
-    margin-top: 12rem;
-    border-bottom: 2px solid #BC66EE;
-    width: 30%;
+.sal1,
+.sal2,
+.sal3 {
+  color: #212121;
+  margin-top: 12rem;
+  border-bottom: 2px solid #bc66ee;
+  width: 30%;
 }
 
 .sal2 {
-    margin-top: 5rem;
+  margin-top: 5rem;
 }
 
 .sal3 {
-    margin-top: -2rem;
+  margin-top: -2rem;
 }
 
 .valorSalario {
-    font-size: 2.3rem;
-    font-weight: 700;
+  font-size: 2.3rem;
+  font-weight: 700;
 }
 
 .valorSalario span {
-    color: #8E8D90;
+  color: #8e8d90;
 }
 
 .descricao {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .background2 {
-    background: whitesmoke;
-    color: #212121;
+  background: whitesmoke;
+  color: #212121;
 }
 
 .tituloIndicado {
-    margin-top: 3rem;
-    color: #261555;
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 3rem;
+  margin-top: 3rem;
+  color: #261555;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
 }
 
 .containerPQ {
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-    margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 3rem;
 }
 
 .imgIndica {
-    width: 360px;
-    height: 260px;
-    margin-bottom: 2rem;
+  width: 360px;
+  height: 260px;
+  margin-bottom: 2rem;
 }
 
 .divPQ h3 {
-    color: #261555;
-    font-weight: 700;
+  color: #261555;
+  font-weight: 700;
 }
 
 .divPQ p {
-    font-size: 1.2rem;
-    font-weight: 500;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
-.tituloPrograma, .paragrafoPrograma {
-    margin-top: 3rem;
-    text-align: center;
+.tituloPrograma,
+.paragrafoPrograma {
+  margin-top: 3rem;
+  text-align: center;
 }
 
 .tituloPrograma {
-    font-weight: 700;
-    font-size: 3.5rem;
-    color: #CDF257;
+  font-weight: 700;
+  font-size: 3.5rem;
+  color: #cdf257;
 }
 
 .paragrafoPrograma {
-    margin-top: 0rem;
-    margin-bottom: 5rem;
-    font-size: 1.2rem;
+  margin-top: 0rem;
+  margin-bottom: 5rem;
+  font-size: 1.2rem;
 }
 
 .containerMaterias {
-    margin-bottom: 5rem;
+  margin-bottom: 5rem;
 }
 
 button {
-    background: transparent;
-    border: none;
-    display: flex;
-    align-items: end;
-    justify-content: space-between;
-    width: 100%;
-    border-bottom: 1px solid;
-    transition: 0.3s ease-in-out;
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid;
+  transition: 0.3s ease-in-out;
 }
 
-button:hover, .subtituloCurso:hover {
-    color: #CDF257 !important;
-
+button:hover,
+.subtituloCurso:hover {
+  color: #cdf257 !important;
 }
 
 .imgPlus {
-    width: 3%;
-    background: #CDF257;
-    padding: 0rem;
-    border-radius: 100px;
-    transition: 0.3s ease-in-out;
-    margin-bottom: 0.5rem;
-
+  width: 3%;
+  background: #cdf257;
+  padding: 0rem;
+  border-radius: 100px;
+  transition: 0.3s ease-in-out;
+  margin-bottom: 0.5rem;
 }
 
 .imgPlus:hover {
-    background: #BC66EE;
-    padding: 1rem;
+  background: #bc66ee;
+  padding: 1rem;
 }
 
 .divCursos h3 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #CDF257;
-    text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #cdf257;
+  text-align: center;
 }
 
 .subtituloCurso {
-    color: #FEEFE5 !important;
-    transition: 0.3s ease-in-out;
+  color: #feefe5 !important;
+  transition: 0.3s ease-in-out;
 }
 
 .divMaterias {
-    display: none;
+  display: none;
 }
 
 .divMateria h4 {
-    font-size: 1.2rem   ;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border-bottom: 1px solid #CDF257;
-    border-top: 1px solid #BC66EE;
-    display: flex;
-    justify-content: space-between;
+  font-size: 1.2rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #cdf257;
+  border-top: 1px solid #bc66ee;
+  display: flex;
+  justify-content: space-between;
 }
 
 .containerBonus {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 4rem;
-    margin-bottom: 4rem;
-    border-radius: 20px;
-    background: #FEEFE5;
-    height: 260px;
-    width: 1160px;
-    margin-left: 8.5rem;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 4rem;
+  margin-bottom: 4rem;
+  border-radius: 20px;
+  background: #feefe5;
+  height: 260px;
+  width: 1160px;
+  margin-left: 8.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
 }
 
 .divBonus {
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-    margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 1rem;
 }
 
 .img2 {
-    background: #212121;
-    border-radius: 20px;
-    margin-top: -1.5rem;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  background: #212121;
+  border-radius: 20px;
+  margin-top: -1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
 }
 
 .divTextos {
-    color: #212121;
-    display: flex;
-    flex-direction: column;
+  color: #212121;
+  display: flex;
+  flex-direction: column;
 }
 
 .divTextos h3 {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #22053D;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #22053d;
 }
 
 .divTextos p {
-    font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 
 .img3 {
-    position: relative;
-    top: 414.6%;
-    left: 18.2%;
-    border-bottom-right-radius: 20px;
-    height: 260px;
-    border-top-right-radius: 20px;
+  position: relative;
+  top: 414.6%;
+  left: 18.2%;
+  border-bottom-right-radius: 20px;
+  height: 260px;
+  border-top-right-radius: 20px;
 }
 
 .anotherBackground {
-    background: #FEEFE5;
-    height: 100vh;
-    position: relative;
-    z-index: 1; 
+  background: #feefe5;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
 }
 
 .background3 {
-    background: linear-gradient(to right, #5C3E7F, #6B5192, #7B65A6, #8976B7, #9586C6);
-    height: 270px;
-    position: absolute;
-    top: 5%;
-    width: 100%;
-    z-index: 2;
+  background: linear-gradient(
+    to right,
+    #5c3e7f,
+    #6b5192,
+    #7b65a6,
+    #8976b7,
+    #9586c6
+  );
+  height: 270px;
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  z-index: 2;
 }
 
 .divTitulo {
-    display: flex;
-    align-items: center;
-    margin-top: 4rem;
-    margin-left: 9rem;
+  display: flex;
+  align-items: center;
+  margin-top: 4rem;
+  margin-left: 9rem;
 }
 
 .divTitulo h3 {
-    font-size: 3.3rem;
+  font-size: 3.3rem;
 }
 
 .containerCurriculo {
-    padding: 4rem;
-    border-radius: 20px;
-    background: whitesmoke;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
-    margin-top: 4rem;
-    margin-bottom: 3rem;
+  padding: 4rem;
+  border-radius: 20px;
+  background: whitesmoke;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  margin-top: 4rem;
+  margin-bottom: 3rem;
 }
 
 .divCurriculo {
-    color: #22053D;
+  color: #22053d;
 }
 
-.divCurriculo, .divHabilidades {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    border-bottom: 1px solid #E7E6EB;
-    padding-bottom: 2rem;
+.divCurriculo,
+.divHabilidades {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom: 1px solid #e7e6eb;
+  padding-bottom: 2rem;
 }
 
 .divHabilidades {
-    padding-bottom: 0rem;
-    gap: 4rem;
+  padding-bottom: 0rem;
+  gap: 4rem;
 }
 
 .divFotoNome {
-    display: flex;
-    align-items: flex-end;
-    gap: 1rem;
-    margin-top: -2rem;
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  margin-top: -2rem;
 }
 
 .img4 {
-    border-radius: 100px;
+  border-radius: 100px;
 }
 
 .divSalario {
-    margin-top: -2rem;
+  margin-top: -2rem;
 }
 
 .divSalario p {
-    text-align: end;
+  text-align: end;
 }
 
 .ulCurriculo {
-    list-style-type: none; 
-    padding-left: 0; 
-    margin-left: 1rem;
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 1rem;
 }
 
 .ulCurriculo li {
-    color: #212121;
-    font-size: 1.5rem;
-    margin-bottom: 3rem;
-    margin-top: 3rem;
-    font-weight: 300;
-    position: relative;
-    padding-left: 30px; 
-    margin-bottom: 10px;
+  color: #212121;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  font-weight: 300;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
 }
 
 .ulCurriculo li::before {
-    content: ''; 
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 15px; 
-    height: 15px;
-    background-color: #BC66EE; 
-    border-radius: 50%;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  background-color: #bc66ee;
+  border-radius: 50%;
 }
 
 .divCertificado {
-    display: flex;
-    margin-top: 3rem;
-    align-items: flex-start;
-    gap: 3rem;
+  display: flex;
+  margin-top: 3rem;
+  align-items: flex-start;
+  gap: 3rem;
 }
 
 .tituloCertificado h3 {
-    color: #261555;
-    font-size: 1.4rem;
-    font-weight: 800;
+  color: #261555;
+  font-size: 1.4rem;
+  font-weight: 800;
 }
 
 .img5 {
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
 }
 
 .background4 {
-    background: url(/img/tild3539-3265-4431-b163-303366353534__banner.png);
-    background-repeat: no-repeat;
-    margin-top: 6rem;
-    margin-left: 27.5rem;
-    width: 1160px;
-    height: 480px;
-    padding: 3rem;
+  background: url(/img/tild3539-3265-4431-b163-303366353534__banner.png);
+  background-repeat: no-repeat;
+  margin-top: 6rem;
+  margin-left: 27.5rem;
+  width: 1160px;
+  height: 480px;
+  padding: 3rem;
 }
 
 .divGratis {
-    background: #CDF257;
-    color: #22053D;
-    border-radius: 50px;
-    text-align: center;
-    width: 8.125rem;
-    height: 3.125rem;
-    margin-bottom: 1.5rem;
-    font-size: 1.8rem;
-    padding-top: 0.3rem;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    letter-spacing: 5px;
+  background: #cdf257;
+  color: #22053d;
+  border-radius: 50px;
+  text-align: center;
+  width: 8.125rem;
+  height: 3.125rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  padding-top: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  letter-spacing: 5px;
 }
 
 .tituloGratis {
-    color: #22053D;
-    font-size: 3rem;
-    font-weight: 600;
-    margin-bottom: 4.5rem;
+  color: #22053d;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 4.5rem;
 }
 
 .divTextosIngles {
-    margin-left: 7rem;
+  margin-left: 7rem;
 }
 
 .divTextosIngles h3 {
-    color: #22053D;
-    font-size: 2.3rem;
-    font-weight: 600;
+  color: #22053d;
+  font-size: 2.3rem;
+  font-weight: 600;
 }
 
 .divTextosIngles p {
-    color: #22053D;
-    font-size: 1.2rem;
-    margin-top: 2rem;
+  color: #22053d;
+  font-size: 1.2rem;
+  margin-top: 2rem;
 }
 
 .background5 {
-    background: #FEEFE5;
+  background: #feefe5;
 }
 
 .divTituloPlano {
-    color: #22053D;
-    text-align: center;
-    margin-top: 3rem;
+  color: #22053d;
+  text-align: center;
+  margin-top: 3rem;
 }
 
 .divTituloPlano h3 {
-    font-size: 3rem;
-    font-weight: 700;
+  font-size: 3rem;
+  font-weight: 700;
 }
 
 .divTituloPlano p {
-    font-size: 1.2rem;
-    margin-top: 2rem;
-    margin-bottom: 4rem;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
 }
 
 .containerPlanos {
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-    margin-top: 40rem;
-    margin-bottom: 4rem;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  justify-content: center;
 }
 
 .divPlano {
-    padding: 2rem;
-    background: whitesmoke;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 260px;
-    height: 210px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  background: whitesmoke;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 260px;
+  height: 210px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
 }
 
 .imgPlano {
-    background: #261555;
-    padding: 1rem;
-    border-radius: 20px;
-    width: 30%;
+  background: #261555;
+  padding: 1rem;
+  border-radius: 20px;
+  width: 30%;
 }
 
 .divPlano p {
-    color: #212121;
-    margin-top: 2rem;
+  color: #212121;
+  margin-top: 2rem;
 }
 
 .background6 {
-    background: linear-gradient(to right, #261555, #212121, #22053D, #261555);
+  background: linear-gradient(to right, #261555, #212121, #22053d, #261555);
 }
 
 .divLogo {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .imgLogo {
-    border-radius: 20px;
+  border-radius: 20px;
 }
 
-.divLogo h3, .divAreas h4 {
-    font-size: 1.2rem;
-    color: whitesmoke;
-    font-weight: 700;
+.divLogo h3,
+.divAreas h4 {
+  font-size: 1.2rem;
+  color: whitesmoke;
+  font-weight: 700;
 }
 
 .divAreas h4 {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .divLogo2 {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 2rem;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 .divAreas {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 2rem;
-    margin-left: 5.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 2rem;
+  margin-left: 5.5rem;
 }
 
 .divNav {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .divNav a {
-    text-decoration: none;
-    color: #C7C0CE;
-    margin-bottom: 0.5rem; 
-    font-size: 1.1rem;
-    transition: 0.3s ease-in-out;
+  text-decoration: none;
+  color: #c7c0ce;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  transition: 0.3s ease-in-out;
 }
 
 .divNav a:hover {
-    color: #555;
-    text-decoration: underline;
-    font-size: 1.2rem;
+  color: #555;
+  text-decoration: underline;
+  font-size: 1.2rem;
 }
 
 .topLine {
-    border-top: 1px solid #9486A1;
-    margin-top: 2rem;
+  border-top: 1px solid #9486a1;
+  margin-top: 2rem;
 }
 
 .containerContato {
-    margin-top: 2rem;
-    display: flex;
-    gap: 3rem;
-    margin-bottom: 1rem;
+  margin-top: 2rem;
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 1rem;
 }
 
 .divContato {
-    line-height: 1rem;
+  line-height: 1rem;
 }
 
 .divContato p {
-    color: #9486A1;
-    font-size: 1.2rem;
+  color: #9486a1;
+  font-size: 1.2rem;
 }
 
 .divContato h3 {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .divInfo2 {
-    color: #9486A1;
-    line-height: 0.5rem;
+  color: #9486a1;
+  line-height: 0.5rem;
 }
 
 .divSocialMedia {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
 }
 
 .ancoraSocial img {
-    transition: transform 0.3s ease, opacity 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .ancoraSocial:hover img {
-    transform: scale(1.5); 
-    opacity: 0.8;
+  transform: scale(1.5);
+  opacity: 0.8;
 }
 
-@media (max-width: 768px) {
-    .titulo {
-        font-size: 2.5rem;
-    }
+@media (width: 2500px) {
+  .background4 {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    .gota {
-        width: 10rem;
-        height: 20rem;
-        top: 50%;
-        left: 30%;
-    }
+  .sideColor {
+    left: 41.9%;
+  }
 
-    .divDesconto {
-        left: 54.5%;
-        top: 7%;
-        width: 40%;
-    }
+  .splash2 {
+    top: -7%;
+    left: 44%;
+    width: 40%;
+  }
 
-    .splash {
-        height: 26rem;
-        top: 12%;
-        left: -30%;
-    }
+  .divDesconto {
+    width: 6%;
+  }
+}
 
-    .splash2 {
-        height: 100%;
-        top: -5%;
-        left: 25.2%;
-        width: 15%;
-    }
-    
-    .sideColor {
-        height: 106%;
-        top: 54%;
-        left: 0%;
-        width: 100%;
-        transform: rotate(0deg);
-    }
+@media (max-width: 1536px) {
+  .sideColor {
+    top: 65%;
+    left: 36.9%;
+  }
 
-    .containerForm {
-        margin-top: auto;
-        margin-bottom: 3rem;
-        width: auto;
-        height: auto;
-        margin-left: auto;
-    }
+  .splash2 {
+    left: 46.2%;
+  } 
 
-    .tituloSal {
-        font-size: 2.5rem;
-    }
+  .background4 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 13rem;
 
-    .containerSal {
-        display: flex;
-        flex-direction: column;
-        margin-top: auto;
-    }
+  }
+}
 
-    .sal1, .sal2, .sal3 {
-        margin-top: 2rem;
-        width: auto;
-    }
+@media (max-width: 1366px) {
+  .background4 {
+    margin-top: 20rem;
+    margin-left: auto;
+    height: auto;
+    margin-right: auto; 
+  }
 
-    .tituloIndicado {
-        font-size: 2.5rem;
-    }
+  .containerBonus {
+    width: auto;
+    margin-left: auto;
+  }
 
-    .containerPQ {
-        display: flex;
-        flex-direction: column;
-    }
+  .img3 {
+    left: 18.8%;
+  }
 
-    .tituloPrograma {
-        font-size: 3rem;
-    }
+  .sideColor {
+    top: 65%;
+    left: 34.4%;
+  }
 
-    .divCursos h3 {
-        font-size: 1.5rem;
-    }
+  .splash2 {
+    display: none;
+  }
 
-    .subtituloCurso {
-        font-size: 1rem;
-    }
+  .divDesconto {
+    left: 79.5%;
+    top: 14%;
+    width: 12%;
+  }
+}
 
-    .imgPlus {
-        width: 10%;
-    }
+@media (max-width: 1114px) {
+  .containerPlanos {
+    margin-top: auto;
+    flex-wrap: wrap;
+  }
 
-    .divMateria h4 {
-        font-size: 0.9rem;
-        gap: 1rem;
-    }
+  body {
+    width: auto;
+  }
 
-    .containerBonus {
-        height: auto;
-        flex-direction: column;
-        width: auto;
-        margin-left: auto;
-    }
+  .titulo {
+    font-size: 2.5rem;
+  }
 
-    .divBonus {
-        gap: 2rem;
-        margin-top: auto;
-        flex-direction: column;
-        margin-bottom: 1rem;
-    }
+  .gota {
+    width: auto;
+    height: 20rem;
+    top: 50%;
+    left: 30%;
+  }
 
-    .divTextos h3 {
-        font-size: 2.5rem;
-        text-align: center;
-    }
+  .splash, .splash2, .sideColor {
+    display: none;
+  }
 
-    .divTextos p {
-        font-size: 1rem;
-    }
+  .divDesconto {
+    left: 79.5%;
+    top: 16%;
+    width: 15%;
+  } 
 
-    .img3 {
-        top: auto;
-        left: auto;
-        height: auto;
-        border-radius: 20px;
-    }
+  .containerForm {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: auto;
+    height: auto;
+    margin-left: auto;
+  }
 
-    .divTitulo {
-        margin-left: auto;
-    }
+  .tituloSal {
+    font-size: 2.5rem;
+  }
 
-    .divTitulo h3 {
-        font-size: 2.4rem;
-    }
+  .containerSal {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+  }
 
-    .containerCurriculo {
-        margin-top: auto;
-    }
+  .sal1,
+  .sal2,
+  .sal3 {
+    margin-top: 2rem;
+    width: auto;
+  }
 
-    .divCurriculo, .divHabilidades {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 3rem;
-    }
-    
-    .divHabilidades {
-        gap: 0rem;
-    }
+  .tituloIndicado {
+    font-size: 2.5rem;
+  }
 
-    .divFotoNome {
-        flex-direction: column;
-        align-items: center;
-    }
+  .containerPQ {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .divSalario {
-        margin-top: -2rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .tituloPrograma {
+    font-size: 3rem;
+  }
 
-    .divSalario p {
-        font-size: 1.1rem;
-    }
+  .divCursos h3 {
+    font-size: 1.5rem;
+  }
 
-    .divSalario h3 {
-        font-size: 2rem;
-    }
+  .subtituloCurso {
+    font-size: 1rem;
+  }
 
-    .divNome h3 {
-        font-size: 2.5rem;
-    }
+  .imgPlus {
+    width: 10%;
+  }
 
-    .divNome p {
-        font-size: 1.1rem;
-    }
+  .divMateria h4 {
+    font-size: 0.9rem;
+    gap: 1rem;
+  }
 
-    .divCertificado {
-        flex-direction: column;
-        align-items: center;
-    }
+  .containerBonus {
+    height: auto;
+    flex-direction: column;
+    width: auto;
+    margin-left: auto;
+  }
 
-    .ulCurriculo {
-        padding-left: 0;
-        text-align: left;
-        margin-left: -2rem;
-    }
+  .divBonus {
+    gap: 2rem;
+    margin-top: auto;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
 
-    .tituloCertificado h3 {
-        font-size: 1.5rem;
-        text-align: center;
-    }
+  .divTextos h3 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
 
-    .containerPlanos {
-        flex-direction: column;
-    }
+  .divTextos p {
+    font-size: 1rem;
+  }
 
-    .divLogo2 {
-        justify-content: center;
-        gap: 2rem;
-    }
+  .img3 {
+    top: auto;
+    left: auto;
+    height: auto;
+    border-radius: 20px;
+  }
 
-    .imgLogo {
-        width: 100px;
-        height: auto;
-    }
+  .divTitulo {
+    margin-left: auto;
+  }
 
-    .divAreas {
-        margin-left: auto;
-    }
+  .divTitulo h3 {
+    font-size: 2.4rem;
+  }
 
-    .divAreas h4 {
-        font-size: 2rem;
-    }
+  .containerCurriculo {
+    margin-top: auto;
+  }
 
-    .divNav a {
-        font-size: 1.5rem;
-    }
+  .divCurriculo,
+  .divHabilidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
 
-    .containerContato {
-        flex-direction: column;
-        gap: 2rem;
-    }
+  .divHabilidades {
+    gap: 0rem;
+  }
 
-    .divInfo2 {
-        line-height: 1.3;
-    }
+  .divFotoNome {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .divSocialMedia {
-        margin-top: auto;
-        margin-bottom: 1rem;
-    }
+  .divSalario {
+    margin-top: -2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .background4 {
-        display: none;
-    }
+  .divSalario p {
+    font-size: 1.1rem;
+  }
+
+  .divSalario h3 {
+    font-size: 2rem;
+  }
+
+  .divNome h3 {
+    font-size: 2.5rem;
+  }
+
+  .divNome p {
+    font-size: 1.1rem;
+  }
+
+  .divCertificado {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ulCurriculo {
+    padding-left: 0;
+    text-align: left;
+    margin-left: -2rem;
+  }
+
+  .tituloCertificado h3 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .divLogo2 {
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+
+  .imgLogo {
+    width: 50px;
+    height: auto;
+  }
+
+  .divLogo h3, .divAreas h4 {
+    font-size: 0.7rem;
+}
+
+  .divAreas {
+    margin-left: auto;
+  }
+
+  .divAreas h4 {
+    font-size: 1.5rem;
+  }
+
+  .divNav a {
+    font-size: 1rem;
+  }
+
+  .containerContato {
+    gap: 2rem;
+  }
+
+  .divContato h3 {
+    font-size: 1rem;
+  }
+
+  .divInfo2 {
+    line-height: 1.3;
+  }
+
+  .divSocialMedia {
+    margin-top: auto;
+    margin-bottom: 1rem;
+    flex-direction: column;
+    gap: 0.9rem;
+  }
+
+  .background3 {
+    position: relative;
+  }
+
+  .background4 {
+    display: none;
+  }
+
+  .background5 {
+    margin-top: auto;
+  }
+
+  .divTituloPlano h3 {
+    font-size: 2.5rem;
+  }
+
+  .anotherBackground {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    width: auto;
+  }
+
+  .titulo {
+    font-size: 2.5rem;
+  }
+
+  .gota {
+    width: auto;
+    height: 20rem;
+    top: 50%;
+    left: 30%;
+  }
+
+  .divDesconto, .splash, .splash2, .sideColor {
+    display: none;
+  }
+
+  .containerForm {
+    margin-top: auto;
+    margin-bottom: 3rem;
+    width: auto;
+    height: auto;
+    margin-left: auto;
+  }
+
+  .tituloSal {
+    font-size: 2.5rem;
+  }
+
+  .containerSal {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+  }
+
+  .sal1,
+  .sal2,
+  .sal3 {
+    margin-top: 2rem;
+    width: auto;
+  }
+
+  .tituloIndicado {
+    font-size: 2.5rem;
+  }
+
+  .containerPQ {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tituloPrograma {
+    font-size: 3rem;
+  }
+
+  .divCursos h3 {
+    font-size: 1.5rem;
+  }
+
+  .subtituloCurso {
+    font-size: 1rem;
+  }
+
+  .imgPlus {
+    width: 10%;
+  }
+
+  .divMateria h4 {
+    font-size: 0.9rem;
+    gap: 1rem;
+  }
+
+  .containerBonus {
+    height: auto;
+    flex-direction: column;
+    width: auto;
+    margin-left: auto;
+  }
+
+  .divBonus {
+    gap: 2rem;
+    margin-top: auto;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
+  .divTextos h3 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .divTextos p {
+    font-size: 1rem;
+  }
+
+  .img3 {
+    top: auto;
+    left: auto;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  .divTitulo {
+    margin-left: auto;
+  }
+
+  .divTitulo h3 {
+    font-size: 2.4rem;
+  }
+
+  .containerCurriculo {
+    margin-top: auto;
+  }
+
+  .divCurriculo,
+  .divHabilidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .divHabilidades {
+    gap: 0rem;
+  }
+
+  .divFotoNome {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .divSalario {
+    margin-top: -2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .divSalario p {
+    font-size: 1.1rem;
+  }
+
+  .divSalario h3 {
+    font-size: 2rem;
+  }
+
+  .divNome h3 {
+    font-size: 2.5rem;
+  }
+
+  .divNome p {
+    font-size: 1.1rem;
+  }
+
+  .divCertificado {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ulCurriculo {
+    padding-left: 0;
+    text-align: left;
+    margin-left: -2rem;
+  }
+
+  .tituloCertificado h3 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .containerPlanos {
+    flex-direction: column;
+    margin-top: auto;
+  }
+
+  .divLogo2 {
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .imgLogo {
+    width: 100px;
+    height: auto;
+  }
+
+  .divAreas {
+    margin-left: auto;
+  }
+
+  .divAreas h4 {
+    font-size: 2rem;
+  }
+
+  .divNav a {
+    font-size: 1.5rem;
+  }
+
+  .containerContato {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .divInfo2 {
+    line-height: 1.3;
+  }
+
+  .divSocialMedia {
+    margin-top: auto;
+    margin-bottom: 1rem;
+    flex-direction: row;
+  }
+
+  .background3 {
+    position: relative;
+  }
+
+  .background4 {
+    display: none;
+  }
+
+  .background5 {
+    margin-top: auto;
+  }
+
+  .divTituloPlano h3 {
+    font-size: 2.5rem;
+  }
+
+  .anotherBackground {
+    display: none;
+  }
+
+  .divLogo h3, .divAreas h4 {
+    font-size: 1.4rem;
+  }
+  
+}
+
+@media (max-width: 360px) {
+  body {
+    width: auto;
+  }
+}
+
+@media (max-width: 320px) {
+  body {
+    width: 130%;
+  }
 }
